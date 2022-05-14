@@ -1,0 +1,78 @@
+/*SETTINGS
+----------------------------------------------------------------*/
+@font-face {
+        font-family: "Acme";
+        src: url(../fonts/Acme-Regular.ttf);
+}
+@font-face {
+    font-family: "Messi";
+    src: url(../fonts/ElMessiri-VariableFont_wght.ttf);
+}
+
+/*STRUCTURE
+----------------------------------------------------------------*/
+
+body{
+    border: 10px solid;
+    border-style: dashed;
+    padding: 10px;
+    font: 'Messi';
+    background-color:rgba(70, 187, 152, 0.993);
+
+    z-index: 0;
+    position: relative;
+}
+
+/*ELEMENTS
+----------------------------------------------------------------*/
+h1{
+    font-family: 'Acme';
+    color: rgb(0, 0, 0);
+    background-color: rgba(51, 139, 113, 0.993);
+    position: fixed;
+    
+}
+
+h2{
+    font-family:'Messi';
+    color: black;
+    position: relative;
+    left: 35%;
+}
+
+img{
+    position: relative;
+    border:dotted;
+    border-color: rgba(233, 243, 145, 0.993);
+    left: 35%;
+    top: 50%;
+    z-index: 0;
+
+}
+
+/*OBJETS
+----------------------------------------------------------------*/
+
+.CR{
+    font-family: 'Messi';
+    list-style-image: url(../../Cora.png);
+    position: relative;
+    left: 35%;
+}
+
+.VJ{
+    font-family: 'Messi';
+    list-style-image: url(../../CB.png);
+    position: relative;
+    left: 35%;
+}
+
+.CN{
+    height: 300px;
+    width: 500px;
+    overflow: scroll;
+    font-family: 'Messi';
+    list-style-type: armenian;
+    position: relative;
+    left: 35%;
+}
