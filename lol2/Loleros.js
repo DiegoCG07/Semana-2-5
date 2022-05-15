@@ -28,7 +28,7 @@ class campeon {
             this.vida=(this.vida)*1.15;
             break;
         
-        case "arquero":
+        case "tirador":
             //arquero
             this.ataque=(this.ataque)*1.24;
             this.habilidades.push('distancia');
@@ -65,7 +65,7 @@ class campeon {
                 this.tipo = 4;
                 break;
             
-            case "arquero":
+            case "tirador":
                 this.tipo = 5;
                 break;
     
@@ -91,7 +91,7 @@ class campeon {
                     campeon.tipo = 4;
                     break;
                 
-                case "arquero":
+                case "tirador":
                     campeon.tipo = 5;
                     break;
         
@@ -131,7 +131,7 @@ class campeon {
                 break;
             
             case 5:
-                this.tipo = "arquero";
+                this.tipo = "tirador";
                 break;
     
             case 9:
@@ -158,7 +158,7 @@ class campeon {
                     break;
                 
                 case 5:
-                    campeon.tipo = "arquero";
+                    campeon.tipo = "tirador";
                     break;
         
                 case 9:
@@ -166,8 +166,16 @@ class campeon {
                     break;
         
                 default:
-                    console.log("No pusiste el tipo jajaj")
+                    console.log("No pusiste el tipo jajaj");
                     break;
                 }
     }
 }
+
+const Diego = new campeon("Diego", 100, 100, 100, "asesino", "Comer Iguanas", "Robar sin violencia", "No necesita comer");
+const ELRodri = new campeon("ELRodri", 100, 100, 100, "mago", "Caerme mal", "Es Cacastroso", "Le gusta la pizza con yougurt");
+const Pablo = new campeon ("Pablo", 100, 100, 100, "tanque", "Nunnca se cansa", "No puede ser estafado", "Vende casas a muy buen precio");
+const Alcides = new campeon("Alcides", 100, 100, 100, "tirador", "Le fian en la Tienda", "Le quita el chip a su cel antes de que se lo roben", "Es fiel");
+const Abisair = new campeon("Abisair", 100, 100, 100, "luchador", "Es papá prematuro pero sigue estudiando", "Su unico vicio es el Futbol", "SIIIUUUU");
+
+Diego.comparar(ELRodri);
